@@ -1,0 +1,76 @@
+body{
+	font-family: courier;
+	background-image:url("/images/bricks.jpg");
+	background-color:#070707;
+}
+
+/* ########### Universals ##############*/
+.active{
+	
+}
+
+#headlogo img{
+	max-width:150px;
+	float:left;
+	position:absolute;
+}
+
+#mainlogo img{
+	max-width:650px;
+	width:50%;
+	margin-left:23%;
+	margin-right:23%;
+}
+
+nav{
+	text-align:center;
+	font-size:25px;
+	
+}
+
+nav ul {
+	border-bottom: #e7e6e1 3px solid;
+	list-style:none;
+	background:#070707;
+}
+
+nav ul li{
+	display:inline-block;
+	text-align:left;
+	position:relative;
+
+}
+
+nav ul li a{
+	padding:18px 18px;
+	color:#e7e6e1;
+	text-decoration:none;
+	display:block;
+	height:65px;
+	vertical-align:middle;
+	
+
+}
+
+nav ul li a:hover{
+	color:#990000;
+}
+	
+nav ul li ul.dropdown{
+	background:#f2f2f2;
+	color:#ffcc00;
+	min-width:100%;
+	display:none;
+	position:absolute;
+	z-index:600;
+
+}
+
+nav ul li:hover ul.dropdown{
+	display:block;
+	border-top: #003300 3px solid;
+	border-bottom: #003300 3px solid;
+}
+
+nav ul li ul.dropdown li{
+	display:block;
