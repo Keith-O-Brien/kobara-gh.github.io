@@ -1,37 +1,91 @@
 body{
 	font-family: courier;
-	background-image:url("/images/bricks.jpg");
 	background-color:#070707;
+	color:#e7e6e1;
 }
 
 /* ########### Universals ##############*/
-.active{
-	
+
+
+.center{
+	text-align:center;
+}
+
+.subbig{
+	color:#e7e6e1;
+	font-size:27px;
+	text-align:center;
+}
+
+.big{
+	color:#e7e6e1;
+	font-size:90px;
+	text-align:center;
+	padding:0px;
+	margin:0px;
+}
+
+.navbar{	
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+.footbar{
+	overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+	border-top:#e7e6e1 3px solid;
+	background-color:#070707;
+}
+
+
+
+
+
+#official{
+	display:block;
+	border:#e7e6e1 2px solid;
+	padding:0px 10px;
+	margin:0px 20px 5px 0px;
+	float:right;
+	font-size:17px;
+	font-weight:bold;
 }
 
 #headlogo img{
+	display:block;
 	max-width:150px;
 	float:left;
 	position:absolute;
+	padding:33px 5px 5px 5px;
 }
 
-#mainlogo img{
-	max-width:650px;
-	width:50%;
-	margin-left:23%;
-	margin-right:23%;
-}
+
+
 
 nav{
 	text-align:center;
-	font-size:25px;
-	
+	font-size:23px;
+	margin-top:0px;
+		background:#070707;
+
 }
 
 nav ul {
 	border-bottom: #e7e6e1 3px solid;
 	list-style:none;
-	background:#070707;
+	text-align:center;
+
 }
 
 nav ul li{
@@ -42,35 +96,167 @@ nav ul li{
 }
 
 nav ul li a{
-	padding:18px 18px;
+	padding:18px 15px;
 	color:#e7e6e1;
 	text-decoration:none;
 	display:block;
-	height:65px;
+	height:40px;
 	vertical-align:middle;
-	
 
 }
 
 nav ul li a:hover{
 	color:#990000;
 }
+
+#mainlogo img{
+	max-width:650px;
+	width:50%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:70px;
+	margin-top:200px;
+}
+
+#mainhall{
+	text-align:center;
+	padding:0px;
+	margin-top:150px;
+	margin-bottom:50px;
+}
+
+#ep img{
+	max-height:300px;
+	border:#e7e6e1 1px groove;
+	margin-bottom:7px;
+}
+
+#ep img:hover{
+	border:#990000 3px groove;
+	max-width:300px;
+
+}
+
+.buynow{
+	text-decoration:none;
+	width:250px;
+	color:#e7e6e1;
+	background:#070707;
+	font-size:30px;
+	padding: 3px 60px;
+	font-weight:bold;
+	border:#e7e6e1 3px groove;
+}
+
+.buynow:hover{
+	color:#070707;
+	background-color:#e7e6e1;
+	border:#990000 3px groove;
+}
+
+.tickets{
+	text-decoration:none;
+	color:#e7e6e1;
+	background:#070707;
+	font-size:30px;
+	padding: 3px 10px;
+	font-weight:bold;
+}
+
+.tickets:hover{
+	color:#070707;
+	background-color:#e7e6e1;
+}
+
+#tinytext{
+	font-size:11px;
+}
+
+#social-media{
+	display:inline-block;
+	float:right;
+	margin-right:25px;
+}
 	
-nav ul li ul.dropdown{
-	background:#f2f2f2;
-	color:#ffcc00;
-	min-width:100%;
-	display:none;
-	position:absolute;
-	z-index:600;
+#social-media img{
+	max-height:28px;
+	margin:5px 3px;
+}
+
+#social-media img:hover{
+	border:#e7e6e1 1px solid;
+}
+
+#social-media a{
+	text-decoration:none;
+}
+
+#giglist{
+	margin-top:150px;
+}
+
+
+#giglist h1{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 15px;
+	text-shadow: #990000 2px 3px 3px;}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 15px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+td a{
+	text-decoration:none;
+	color:#e7e6e1;
+}
+td a:hover{
+	text-decoration:none;
+	color:#070707;
+		text-shadow: #990000 0px 0px 3px;}
 
 }
 
-nav ul li:hover ul.dropdown{
-	display:block;
-	border-top: #003300 3px solid;
-	border-bottom: #003300 3px solid;
-}
+/* demo styles */
 
-nav ul li ul.dropdown li{
-	display:block;
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
