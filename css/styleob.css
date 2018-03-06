@@ -77,7 +77,7 @@ nav{
 	text-align:center;
 	font-size:23px;
 	margin-top:0px;
-		background:#070707;
+	background:#070707;
 
 }
 
@@ -325,6 +325,7 @@ td a:hover{
 /* ########### Media Queries ##############*/
 
 @media(max-width: 768px){
+	
 	header, nav{
 		float:none;
 		text-align:center;
@@ -335,6 +336,38 @@ td a:hover{
 		display:none;
 	}
 	
+	.burger-nav{
+		display:block;
+		height:40px;
+		width:100%;
+		background:url(images/burger.png) no repeat 98% center;
+	}
+	
+	nav ul li a{
+	padding:5px 3px;
+	color:#e7e6e1;
+	text-decoration:none;
+	display:block;
+	height:10px;
+	vertical-align:middle;
+
+	}
+	
+	.navbar{	
+    width: 100%; /* Full width */
+}
+
+	/* Links inside the navbar */
+	.navbar a {
+		display: block;
+		text-align: center;
+	}
+
+	.footbar{
+		width: 100%; /* Full width */
+		border-top:#e7e6e1 3px solid;
+		background-color:#070707;
+	}
 	
 }
 
