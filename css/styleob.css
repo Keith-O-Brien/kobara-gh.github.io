@@ -321,3 +321,20 @@ td a:hover{
 #social-media a{
 	text-decoration:none;
 }
+
+/* ########### Media Queries ##############*/
+
+@media(max-width: 768px){
+	header, nav{
+		float:none;
+		text-align:center;
+		width:100%
+	}
+	
+	#headlogo, #official{
+		display:none;
+	}
+	
+	
+}
+
